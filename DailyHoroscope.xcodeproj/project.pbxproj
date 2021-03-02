@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1F9BDB6125EEA34D00450019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BDB6025EEA34D00450019 /* AppDelegate.swift */; };
 		1F9BDB6325EEA34D00450019 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BDB6225EEA34D00450019 /* SceneDelegate.swift */; };
-		1F9BDB6525EEA34D00450019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BDB6425EEA34D00450019 /* ViewController.swift */; };
 		1F9BDB6825EEA34D00450019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9BDB6625EEA34D00450019 /* Main.storyboard */; };
 		1F9BDB6A25EEA34E00450019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9BDB6925EEA34E00450019 /* Assets.xcassets */; };
 		1F9BDB6D25EEA34E00450019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9BDB6B25EEA34E00450019 /* LaunchScreen.storyboard */; };
+		1F9BDB7625EEA41100450019 /* ZodiacalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BDB7525EEA41100450019 /* ZodiacalViewController.swift */; };
+		1F9BDB7A25EEA60900450019 /* ZodiacalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BDB7925EEA60900450019 /* ZodiacalCell.swift */; };
+		1F9BDB7E25EEAC4500450019 /* PredictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BDB7D25EEAC4500450019 /* PredictionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F9BDB5D25EEA34D00450019 /* DailyHoroscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyHoroscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F9BDB6025EEA34D00450019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F9BDB6225EEA34D00450019 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1F9BDB6425EEA34D00450019 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F9BDB6725EEA34D00450019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F9BDB6925EEA34E00450019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F9BDB6C25EEA34E00450019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F9BDB6E25EEA34E00450019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9BDB7525EEA41100450019 /* ZodiacalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacalViewController.swift; sourceTree = "<group>"; };
+		1F9BDB7925EEA60900450019 /* ZodiacalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacalCell.swift; sourceTree = "<group>"; };
+		1F9BDB7D25EEAC4500450019 /* PredictionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				1F9BDB6025EEA34D00450019 /* AppDelegate.swift */,
 				1F9BDB6225EEA34D00450019 /* SceneDelegate.swift */,
-				1F9BDB6425EEA34D00450019 /* ViewController.swift */,
+				1F9BDB7925EEA60900450019 /* ZodiacalCell.swift */,
+				1F9BDB7D25EEAC4500450019 /* PredictionViewController.swift */,
+				1F9BDB7525EEA41100450019 /* ZodiacalViewController.swift */,
 				1F9BDB6625EEA34D00450019 /* Main.storyboard */,
 				1F9BDB6925EEA34E00450019 /* Assets.xcassets */,
 				1F9BDB6B25EEA34E00450019 /* LaunchScreen.storyboard */,
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F9BDB6525EEA34D00450019 /* ViewController.swift in Sources */,
+				1F9BDB7A25EEA60900450019 /* ZodiacalCell.swift in Sources */,
+				1F9BDB7E25EEAC4500450019 /* PredictionViewController.swift in Sources */,
+				1F9BDB7625EEA41100450019 /* ZodiacalViewController.swift in Sources */,
 				1F9BDB6125EEA34D00450019 /* AppDelegate.swift in Sources */,
 				1F9BDB6325EEA34D00450019 /* SceneDelegate.swift in Sources */,
 			);
