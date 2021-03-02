@@ -14,7 +14,11 @@ class PredictionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        predictionImageView.image = UIImage(
+            named: DataManager.shared.predictionImageNames.randomElement()
+                ?? DataManager.shared.predictionImageNames[1]
+        )
+        predictionLabel.text = "Test"
         // Do any additional setup after loading the view.
     }
     

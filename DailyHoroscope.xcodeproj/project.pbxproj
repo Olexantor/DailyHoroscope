@@ -15,6 +15,9 @@
 		1F9BDB7625EEA41100450019 /* ZodiacalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BDB7525EEA41100450019 /* ZodiacalViewController.swift */; };
 		1F9BDB7A25EEA60900450019 /* ZodiacalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BDB7925EEA60900450019 /* ZodiacalCell.swift */; };
 		1F9BDB7E25EEAC4500450019 /* PredictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BDB7D25EEAC4500450019 /* PredictionViewController.swift */; };
+		1F9BDB8225EEB25C00450019 /* DataManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BDB8125EEB25C00450019 /* DataManagers.swift */; };
+		1F9BDB8525EEB8D500450019 /* ZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BDB8425EEB8D500450019 /* ZodiacSign.swift */; };
+		1F9BDB8825EECCEB00450019 /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9BDB8725EECCEB00450019 /* Prediction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		1F9BDB7525EEA41100450019 /* ZodiacalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacalViewController.swift; sourceTree = "<group>"; };
 		1F9BDB7925EEA60900450019 /* ZodiacalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacalCell.swift; sourceTree = "<group>"; };
 		1F9BDB7D25EEAC4500450019 /* PredictionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionViewController.swift; sourceTree = "<group>"; };
+		1F9BDB8125EEB25C00450019 /* DataManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagers.swift; sourceTree = "<group>"; };
+		1F9BDB8425EEB8D500450019 /* ZodiacSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacSign.swift; sourceTree = "<group>"; };
+		1F9BDB8725EECCEB00450019 /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				1F9BDB7D25EEAC4500450019 /* PredictionViewController.swift */,
 				1F9BDB7525EEA41100450019 /* ZodiacalViewController.swift */,
 				1F9BDB6625EEA34D00450019 /* Main.storyboard */,
+				1F9BDB8125EEB25C00450019 /* DataManagers.swift */,
+				1F9BDB8725EECCEB00450019 /* Prediction.swift */,
+				1F9BDB8425EEB8D500450019 /* ZodiacSign.swift */,
 				1F9BDB6925EEA34E00450019 /* Assets.xcassets */,
 				1F9BDB6B25EEA34E00450019 /* LaunchScreen.storyboard */,
 				1F9BDB6E25EEA34E00450019 /* Info.plist */,
@@ -146,8 +155,11 @@
 				1F9BDB7A25EEA60900450019 /* ZodiacalCell.swift in Sources */,
 				1F9BDB7E25EEAC4500450019 /* PredictionViewController.swift in Sources */,
 				1F9BDB7625EEA41100450019 /* ZodiacalViewController.swift in Sources */,
+				1F9BDB8525EEB8D500450019 /* ZodiacSign.swift in Sources */,
+				1F9BDB8825EECCEB00450019 /* Prediction.swift in Sources */,
 				1F9BDB6125EEA34D00450019 /* AppDelegate.swift in Sources */,
 				1F9BDB6325EEA34D00450019 /* SceneDelegate.swift in Sources */,
+				1F9BDB8225EEB25C00450019 /* DataManagers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

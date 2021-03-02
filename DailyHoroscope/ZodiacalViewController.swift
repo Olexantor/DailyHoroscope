@@ -7,8 +7,25 @@
 
 import UIKit
 
+enum requestURLS: String {
+    case aries = "https://json.astrologyapi.com/v1/sun_sign_prediction/daily/:aries"
+    case taurus = "https://json.astrologyapi.com/v1/sun_sign_prediction/daily/:taurus"
+    case gemini = "https://json.astrologyapi.com/v1/sun_sign_prediction/daily/:gemini"
+    case cancer = "https://json.astrologyapi.com/v1/sun_sign_prediction/daily/:cancer"
+    case leo = "https://json.astrologyapi.com/v1/sun_sign_prediction/daily/:leo"
+    case virgo = "https://json.astrologyapi.com/v1/sun_sign_prediction/daily/:virgo"
+    case libra = "https://json.astrologyapi.com/v1/sun_sign_prediction/daily/:libra"
+    case scorpio = "https://json.astrologyapi.com/v1/sun_sign_prediction/daily/:scorpio"
+    case sagittarius = "https://json.astrologyapi.com/v1/sun_sign_prediction/daily/:sagittarius"
+    case capricorn = "https://json.astrologyapi.com/v1/sun_sign_prediction/daily/:capricorn"
+    case aquarius = "https://json.astrologyapi.com/v1/sun_sign_prediction/daily/:aquarius"
+    case pisces = "https://json.astrologyapi.com/v1/sun_sign_prediction/daily/:pisces"
+}
+
 class ZodiacalViewController: UICollectionViewController {
 
+    private let zodiacSigns = ZodiacSign.getZodiacInfo()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +54,9 @@ class ZodiacalViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "zodiacCell", for: indexPath) as! ZodiacalCell
+        cell.zodiacNameLabel.text = zodiacSigns[indexPath.item].name
+        cell.zodiacPeriodLabel.text = zodiacSigns[indexPath.item].period
+        cell.zodiacImageView.image = UIImage(named: zodiacSigns[indexPath.item].name)
     
         return cell
     }
@@ -73,3 +93,12 @@ class ZodiacalViewController: UICollectionViewController {
     */
 
 }
+
+//extension ZodiacalViewController: UICollectionViewDelegateFlowLayout {
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        CGSize(width: UIScreen.main.bounds.width, height: 240)
+//    }
+//    func collectionView(_: UICollectionView, layout: UICollectionViewLayout, insetForSectionAt: Int) -> UIEdgeInsets {
+//        UIEdgeInsets(top: 40, left: UIScreen.main.bounds.width - 200, bottom: 40, right: UIScreen.main.bounds.width - 200)
+//    }
+//}
