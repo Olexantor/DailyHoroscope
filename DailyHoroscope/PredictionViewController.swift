@@ -12,25 +12,38 @@ class PredictionViewController: UIViewController {
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     @IBOutlet var predictionImageView: UIImageView!
     
+    private let zodSigns = ZodiacSign.getZodiacInfo()
+    var selectedCell = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
         predictionImageView.image = UIImage(
             named: DataManager.shared.predictionImageNames.randomElement()
                 ?? DataManager.shared.predictionImageNames[1]
         )
-        predictionLabel.text = "Test"
-        // Do any additional setup after loading the view.
+        navigationItem.title = "Prediction for \(zodSigns[selectedCell].name)"
+        getResponseWithPrediction()
+//        predictionLabel.text = prediction.horoscope
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+   
+    //MARK: Networking
+    private func getResponseWithPrediction() {
+        print(zodSigns[selectedCell].URL)
+        guard let url = URL(string: zodSigns[selectedCell].URL) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, _, error) in
+            guard let data = data else { return }
+            
+            do {
+                let prediction = try JSONDecoder().decode(Prediction.self, from: data)
+                print(Prediction.self)
+            } catch let error {
+                print(error)
+            }
+        }.resume()
     }
-    */
-
 }

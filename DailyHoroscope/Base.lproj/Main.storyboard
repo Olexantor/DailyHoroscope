@@ -103,7 +103,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ERC-Nd-nuS" firstAttribute="leading" secondItem="PGa-IT-iKI" secondAttribute="leading" id="0Oz-Bc-phu"/>
-                            <constraint firstItem="PGa-IT-iKI" firstAttribute="bottom" secondItem="ERC-Nd-nuS" secondAttribute="bottom" id="GDX-Dg-52J"/>
+                            <constraint firstAttribute="bottom" secondItem="ERC-Nd-nuS" secondAttribute="bottom" id="GDX-Dg-52J"/>
                             <constraint firstItem="PGa-IT-iKI" firstAttribute="trailing" secondItem="ERC-Nd-nuS" secondAttribute="trailing" id="IYk-T7-chy"/>
                             <constraint firstItem="EkX-4n-kVb" firstAttribute="centerY" secondItem="ZfC-bI-PzU" secondAttribute="centerY" id="JCJ-O1-ssk"/>
                             <constraint firstItem="EkX-4n-kVb" firstAttribute="centerX" secondItem="ZfC-bI-PzU" secondAttribute="centerX" id="JKG-yT-azV"/>
