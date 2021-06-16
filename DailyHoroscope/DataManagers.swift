@@ -22,7 +22,7 @@ class DataManager {
         "23 November – 22 December", "23 December – 20 January",
         "21 January – 19 February", "20 February – 20 March"]
     
-    let zoiacURLS = [
+    let predictionURL = [
         "http://ohmanda.com/api/horoscope/aries",
         "http://ohmanda.com/api/horoscope/taurus",
         "http://ohmanda.com/api/horoscope/gemini",
@@ -36,7 +36,7 @@ class DataManager {
         "http://ohmanda.com/api/horoscope/aquarius",
         "http://ohmanda.com/api/horoscope/pisces"
     ]
-        
+
     let predictionImageNames = [
     "Space1", "Space2", "Space3", "Space4", "Space5", "Space6", "Space7",
         "Space8", "Space9", "Space10", "Space11", "Space12"

@@ -8,7 +8,7 @@
 struct ZodiacSign {
     let name: String
     let period: String
-    let URL: String
+    let prediction: String
 }
 
 extension ZodiacSign {
@@ -18,11 +18,12 @@ extension ZodiacSign {
         
         let names = DataManager.shared.zodiacNames
         let periods = DataManager.shared.zodiacPeriods
-        let URLS = DataManager.shared.zoiacURLS
+        let predictions = DataManager.shared.predictionURL
         
         for index in 0..<names.count {
             let zodiac = ZodiacSign(name: names[index],
-                                    period: periods[index], URL: URLS[index])
+                                    period: periods[index],
+                                    prediction: predictions[index])
             zodiacs.append(zodiac)
         }
         return zodiacs

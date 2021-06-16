@@ -14,13 +14,14 @@ class ZodiacalViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        collectionView.reloadData()
     }
     
      //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let predVC = segue.destination as? PredictionViewController else{ return }
         predVC.selectedCell = select
+        predVC.getResponseWithPrediction()
        
     }
 

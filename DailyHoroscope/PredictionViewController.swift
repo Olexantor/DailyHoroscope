@@ -13,37 +13,45 @@ class PredictionViewController: UIViewController {
     @IBOutlet var predictionImageView: UIImageView!
     
     private let zodSigns = ZodiacSign.getZodiacInfo()
+    private var prediction: Prediction!
     var selectedCell = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        activityIndicator.startAnimating()
-        activityIndicator.hidesWhenStopped = true
+//        activityIndicator.startAnimating()
+//        activityIndicator.hidesWhenStopped = true
         predictionImageView.image = UIImage(
             named: DataManager.shared.predictionImageNames.randomElement()
                 ?? DataManager.shared.predictionImageNames[1]
         )
         navigationItem.title = "Prediction for \(zodSigns[selectedCell].name)"
-        getResponseWithPrediction()
-//        predictionLabel.text = prediction.horoscope
-    }
-    
 
-   
-    //MARK: Networking
-    private func getResponseWithPrediction() {
-        print(zodSigns[selectedCell].URL)
-        guard let url = URL(string: zodSigns[selectedCell].URL) else { return }
+        if let prediction = prediction {
+            predictionLabel.text = String(prediction.dailyhoroscope.count)
+        }
+    }
+}
+
+
+//MARK: Networking
+extension PredictionViewController {
+    func getResponseWithPrediction() {
+        guard let url = URL(string: DataManager.shared.predictionURL[selectedCell]) else { return }
         
         URLSession.shared.dataTask(with: url) { (data, _, error) in
+            if let error = error {
+                print(error)
+                return
+            }
             guard let data = data else { return }
             
             do {
-                let prediction = try JSONDecoder().decode(Prediction.self, from: data)
-                print(Prediction.self)
+                self.prediction = try JSONDecoder().decode(Prediction.self, from: data)
+                
             } catch let error {
                 print(error)
             }
         }.resume()
     }
 }
+
