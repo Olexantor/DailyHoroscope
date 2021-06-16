@@ -63,7 +63,6 @@
                                     <outlet property="zodiacImageView" destination="Jge-Tg-sbv" id="hWB-DI-3QK"/>
                                     <outlet property="zodiacNameLabel" destination="iM0-Tg-suM" id="RDs-Fu-PSE"/>
                                     <outlet property="zodiacPeriodLabel" destination="Vbx-8f-jmM" id="vX5-Dp-LZW"/>
-                                    <segue destination="9qG-Hh-Tka" kind="show" id="dcE-U0-kAL"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -73,6 +72,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Zodiacal signs" id="WBQ-Au-Itf"/>
+                    <connections>
+                        <segue destination="9qG-Hh-Tka" kind="show" identifier="showPrediction" id="ltK-EN-Wl0"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuP-MI-sq6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,7 +89,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ERC-Nd-nuS">
-                                <rect key="frame" x="0.0" y="91" width="320" height="477"/>
+                                <rect key="frame" x="0.0" y="79" width="320" height="489"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRL-i4-Swb">
                                 <rect key="frame" x="16" y="91" width="288" height="21"/>
@@ -95,9 +97,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="EkX-4n-kVb">
-                                <rect key="frame" x="150" y="274" width="20" height="20"/>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PGa-IT-iKI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -105,24 +104,21 @@
                             <constraint firstItem="ERC-Nd-nuS" firstAttribute="leading" secondItem="PGa-IT-iKI" secondAttribute="leading" id="0Oz-Bc-phu"/>
                             <constraint firstAttribute="bottom" secondItem="ERC-Nd-nuS" secondAttribute="bottom" id="GDX-Dg-52J"/>
                             <constraint firstItem="PGa-IT-iKI" firstAttribute="trailing" secondItem="ERC-Nd-nuS" secondAttribute="trailing" id="IYk-T7-chy"/>
-                            <constraint firstItem="EkX-4n-kVb" firstAttribute="centerY" secondItem="ZfC-bI-PzU" secondAttribute="centerY" id="JCJ-O1-ssk"/>
-                            <constraint firstItem="EkX-4n-kVb" firstAttribute="centerX" secondItem="ZfC-bI-PzU" secondAttribute="centerX" id="JKG-yT-azV"/>
                             <constraint firstItem="oRL-i4-Swb" firstAttribute="top" secondItem="PGa-IT-iKI" secondAttribute="top" id="Kjc-Hg-Ezi"/>
-                            <constraint firstItem="ERC-Nd-nuS" firstAttribute="top" secondItem="oRL-i4-Swb" secondAttribute="top" id="WrL-cM-E7d"/>
+                            <constraint firstItem="ERC-Nd-nuS" firstAttribute="top" secondItem="oRL-i4-Swb" secondAttribute="top" constant="-12" id="WrL-cM-E7d"/>
                             <constraint firstItem="PGa-IT-iKI" firstAttribute="trailing" secondItem="oRL-i4-Swb" secondAttribute="trailing" constant="16" id="osU-ea-VBR"/>
                             <constraint firstItem="oRL-i4-Swb" firstAttribute="leading" secondItem="PGa-IT-iKI" secondAttribute="leading" constant="16" id="p9D-El-QCh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Prediction for Zodiac" id="TGA-Jo-nBw"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="EkX-4n-kVb" id="YeF-3e-bBf"/>
                         <outlet property="predictionImageView" destination="ERC-Nd-nuS" id="qN9-W1-bti"/>
                         <outlet property="predictionLabel" destination="oRL-i4-Swb" id="dnT-Rm-fau"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="que-5q-y1w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718" y="49"/>
+            <point key="canvasLocation" x="1717.5" y="48.591549295774648"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wuU-8c-2zO">

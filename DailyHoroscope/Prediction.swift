@@ -6,5 +6,7 @@
 //
 
 struct Prediction: Decodable {
-    let dailyhoroscope: [String: String]
+    let sign: String
+    let date: String
+    let horoscope: String
 }
