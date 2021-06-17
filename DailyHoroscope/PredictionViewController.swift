@@ -22,13 +22,13 @@ class PredictionViewController: UIViewController {
             named: DataManager.shared.predictionImageNames.randomElement()
                 ?? DataManager.shared.predictionImageNames[1]
         )
-        
+
         navigationItem.title = "Prediction for \(zodSigns[selectedCell].name)"
-        
-        
-        if let prediction = prediction {
-            predictionLabel.text = prediction.horoscope
-        }
+
+
+//        if let prediction = prediction {
+//            predictionLabel.text = prediction.horoscope
+//        }
     }
 }
 
@@ -47,7 +47,9 @@ extension PredictionViewController {
             
             do {
                 self.prediction = try JSONDecoder().decode(Prediction.self, from: data)
-                print(self.prediction!)
+                DispatchQueue.main.async { [weak self] in
+                    self?.predictionLabel.text = self?.prediction.horoscope
+                }
                 
             } catch let error {
                 print(error)
