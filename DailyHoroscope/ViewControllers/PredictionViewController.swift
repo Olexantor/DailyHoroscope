@@ -17,18 +17,14 @@ class PredictionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         predictionImageView.image = UIImage(
             named: DataManager.shared.predictionImageNames.randomElement()
                 ?? DataManager.shared.predictionImageNames[1]
         )
 
         navigationItem.title = "Prediction for \(zodSigns[selectedCell].name)"
-
-
-//        if let prediction = prediction {
-//            predictionLabel.text = prediction.horoscope
-//        }
+     
     }
 }
 

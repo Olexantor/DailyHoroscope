@@ -66,20 +66,76 @@
 		1F9BDB5F25EEA34D00450019 /* DailyHoroscope */ = {
 			isa = PBXGroup;
 			children = (
-				1F9BDB6025EEA34D00450019 /* AppDelegate.swift */,
-				1F9BDB6225EEA34D00450019 /* SceneDelegate.swift */,
-				1F9BDB7925EEA60900450019 /* ZodiacalCell.swift */,
-				1F9BDB7D25EEAC4500450019 /* PredictionViewController.swift */,
-				1F9BDB7525EEA41100450019 /* ZodiacalViewController.swift */,
-				1F9BDB6625EEA34D00450019 /* Main.storyboard */,
-				1F9BDB8125EEB25C00450019 /* DataManagers.swift */,
-				1F9BDB8725EECCEB00450019 /* Prediction.swift */,
-				1F9BDB8425EEB8D500450019 /* ZodiacSign.swift */,
-				1F9BDB6925EEA34E00450019 /* Assets.xcassets */,
-				1F9BDB6B25EEA34E00450019 /* LaunchScreen.storyboard */,
-				1F9BDB6E25EEA34E00450019 /* Info.plist */,
+				1FBE00BE26B0708000BF2403 /* SupportingFiles */,
+				1FBE00BF26B070A200BF2403 /* Views */,
+				1FBE00BD26B0706100BF2403 /* ViewControllers */,
+				1FBE00B926B06FA200BF2403 /* Storyboards */,
+				1FBE00B726B06F4B00BF2403 /* Services */,
+				1FBE00BA26B06FB700BF2403 /* Models */,
+				1FBE00BC26B06FC800BF2403 /* Resources */,
 			);
 			path = DailyHoroscope;
+			sourceTree = "<group>";
+		};
+		1FBE00B726B06F4B00BF2403 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BDB8125EEB25C00450019 /* DataManagers.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1FBE00B926B06FA200BF2403 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BDB6625EEA34D00450019 /* Main.storyboard */,
+				1F9BDB6B25EEA34E00450019 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1FBE00BA26B06FB700BF2403 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BDB8725EECCEB00450019 /* Prediction.swift */,
+				1F9BDB8425EEB8D500450019 /* ZodiacSign.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1FBE00BC26B06FC800BF2403 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BDB6925EEA34E00450019 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1FBE00BD26B0706100BF2403 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BDB7D25EEAC4500450019 /* PredictionViewController.swift */,
+				1F9BDB7525EEA41100450019 /* ZodiacalViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1FBE00BE26B0708000BF2403 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BDB6025EEA34D00450019 /* AppDelegate.swift */,
+				1F9BDB6225EEA34D00450019 /* SceneDelegate.swift */,
+				1F9BDB6E25EEA34E00450019 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		1FBE00BF26B070A200BF2403 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F9BDB7925EEA60900450019 /* ZodiacalCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JKCU96H3SQ;
-				INFOPLIST_FILE = DailyHoroscope/Info.plist;
+				INFOPLIST_FILE = DailyHoroscope/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,7 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JKCU96H3SQ;
-				INFOPLIST_FILE = DailyHoroscope/Info.plist;
+				INFOPLIST_FILE = DailyHoroscope/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
